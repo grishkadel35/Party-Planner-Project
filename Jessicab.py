@@ -14,9 +14,9 @@ def get_guest_count():
     Returns:
         int: The valid guest count or 0 if it is invalid
     """
-    guest_count = int(input(" Enter the amount of guests planning on attending the party: "))
+    guest_count = int(input("Enter the amount of guests planning on attending the party: "))
       
-    if guest_count <= 0:
+    if guest_count <= 0: # guest count can't be negative or 0
         print("Error: Enter a valid number of guests attending the party")
         return 0
     else:
@@ -35,16 +35,16 @@ def calculate_pizzas(guest_count):
     Returns:
     int: The total rounded up number of pizzas needed.
     """
-    if guest_count <= 0:
+    if guest_count <= 0: # guest count can't be negative or 0
         print("Error: Can't calculate number of pizzas for negative guests")
         return 0 
    
-    avg_pizza_slices = 8
-    avg_slice_per_person = 2
+    avg_pizza_slices = 8 # assume this is the avg number of slices for a large pizza
+    avg_slice_per_person = 2 # assume each person eats 2 slices
 
     total_slices = guest_count * avg_slice_per_person
 
-    pizza_count = math.ceil(total_slices / avg_pizza_slices)
+    pizza_count = math.ceil(total_slices / avg_pizza_slices) 
 
     return pizza_count
 
