@@ -7,7 +7,7 @@ A Python command-line program that helps plan a pizza party. It asks how many gu
 ## Authors
 
 - Grish Kadel
-- Barrera Saguay
+- Jessica Barrera Saguay
 - Diallo
 
 ## How It Works
