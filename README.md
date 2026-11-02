@@ -8,7 +8,7 @@ A Python command-line program that helps plan a pizza party. It asks how many gu
 
 - Grish Kadel
 - Jessica Barrera Saguay
-- Diallo
+- Thierno Diallo
 
 ## How It Works
 
