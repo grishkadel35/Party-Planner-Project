@@ -1,5 +1,13 @@
+# Party Planner Project - 2N
+# Grish Kadel
+
+
 def calculate_per_person_share(total_cost: float, guest_count: int) -> float:
+    if guest_count <= 0:
+        raise ValueError("Guest count must be greater than zero to calculate per person share.")
     return round(total_cost / guest_count, 2)
+
+
 def display_per_person_share(total_cost: float, guest_count: int, cost_per_person: float, drink_cost: float, pizza_count: float) -> None:
     print(f"The total cost of the meal is: ${total_cost}")
     print(f"Number of guests: {guest_count}")
