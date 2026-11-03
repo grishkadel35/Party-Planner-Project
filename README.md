@@ -28,5 +28,9 @@ The program is built from six functions, each handling one step of the planning 
 Requires Python 3.
 
 ```bash
-python3 "functions.py"
+python3 project1_Kadel_BarreraSaguay_Diallo.py
 ```
+
+## Submission file
+
+Submit `project1_Kadel_BarreraSaguay_Diallo.py` as the single Python file. It combines all six team functions with a short main function. Each guest is allocated two pizza slices and two individual drinks; each pizza has eight slices. Enter the price of one pizza and one drink when prompted.
