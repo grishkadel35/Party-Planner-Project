@@ -8,10 +8,17 @@ def calculate_per_person_share(total_cost: float, guest_count: int) -> float:
     return round(total_cost / guest_count, 2)
 
 
-def display_per_person_share(total_cost: float, guest_count: int, cost_per_person: float, drink_cost: float, pizza_count: float) -> None:
-    print(f"The total cost of the meal is: ${total_cost}")
-    print(f"Number of guests: {guest_count}")
-    print(f"Cost per person: ${cost_per_person}")
-    print(f"Drink cost: ${drink_cost}")
-    print(f"Pizza count: {pizza_count}")
+def display_party_summary(guest_count: int, pizza_count: int, drink_count: int, total_cost: float, cost_per_person: float) -> None:
+    print("=" * 30)
+    print("       PARTY SUMMARY")
+    print("=" * 30)
+    print(f"Guests:           {guest_count}")
+    print("-" * 30)
+    print("Shopping list:")
+    print(f"  Pizzas:         {pizza_count}")
+    print(f"  Drinks:         {drink_count}")
+    print("-" * 30)
+    print(f"Total cost:       ${total_cost:.2f}")
+    print(f"Each guest owes:  ${cost_per_person:.2f}")
+    print("=" * 30)
     
